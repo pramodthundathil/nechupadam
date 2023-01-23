@@ -1,0 +1,157 @@
+.header
+{
+    top:0;
+    left:0;
+    background-color:rgba(255, 255, 255, 0.5);
+    height:60px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    overflow: hidden;
+}
+
+.logo
+{
+    padding:10px;
+}
+
+
+.footer
+{
+    width:100%;
+    bottom:0;
+    left:0;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    overflow: hidden;
+}
+
+.foot
+{
+    font-family:verdana;
+    text-align: center;
+    padding: 10px;
+    font-size:smaller;
+}
+
+
+
+.center 
+{
+    font-family:Verdana;
+    overflow:hidden;
+    position: absolute;
+    left:38%;
+    top:20%;
+    width:280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:15px;
+    border-radius: 10px;
+}
+
+.log
+{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(135, 123, 16);
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(135, 123, 16);
+}
+
+.center form
+{
+    padding:20px;
+    box-sizing: border-box;
+}
+
+form .textfield
+{
+    position:relative;
+    border-bottom: 1px solid rgb(135, 123, 16);
+    margin:20px 0;
+
+}
+
+.textfield input 
+{
+    width:100%;
+    padding:0 5px;
+    height:40px;
+    font-size: 16px;
+    border:none;
+    background: none;
+    outline: none;
+}
+
+.textfield label
+{
+    position:absolute;
+    top:30%;
+    left:5px;
+    color:grey;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.textfield span::before
+{
+    content:'';
+    position:absolute;
+    top:40px;
+    left:0;
+    width:0;
+    height:2px;
+    background:grey;
+    transition: 0.5s;
+}
+
+.textfield input:focus ~ label,
+.textfield input:valid ~ label
+{
+    top:-17px;
+    color:grey;
+}
+
+.textfield input:focus ~ span::before,
+.textfield input:valid ~ span::before
+{
+    width: 100%;
+}
+
+.pass
+{
+    margin:-5px 0 20px 5px;
+    color:rgb(6, 0, 0);
+    cursor:pointer;
+}
+
+.pass:hover 
+{
+    color:rgb(135, 123, 16);
+    text-decoration: underline;
+}
+
+.loginbutton
+{
+    width:100%;
+    height:50px;
+    border:1px solid rgb(135, 123, 16);
+    border-radius: 25px;
+    background:rgb(135, 123, 16);
+    font-size: 16px;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.loginbutton:hover
+{
+    background:rgb(96, 88, 16);
+}
+

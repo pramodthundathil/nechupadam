@@ -10,3 +10,7 @@ function showForm() {
 function closeForm() {
     document.getElementById("mytokenform").style.display = "none";
 }
+
+function logout(){
+    document.location = 'login.html'
+}

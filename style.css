@@ -25,13 +25,36 @@
     left:0;
 }
 
-.hi{
+@media (max-width:975px)
+{
+    .mycontainer
+    {
+        height:350px;
+    }
+
+
+
+}
+
+@media (max-width:478px)
+{
+    .mycontainer
+    {
+        height:600px;
+    }
+
+}
+
+
+/* .hi{
     background-color:rgba(255, 255, 255, 0.5);
     width:100%;
     position:absolute;
-    margin-top:250px;
+    top:70%;
     left:0;
-}
+    position:absolute
+}     */
+
 
 
 
@@ -42,11 +65,11 @@
 .button2
 {
     background-image:linear-gradient(to right, rgb(135, 123, 16), rgb(176, 162, 31));
-    width: 200px;
+    width: 140px;
     margin: 50px;
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 15px;
     float:left;
     font-family: verdana;
     border:none;
